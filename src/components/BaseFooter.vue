@@ -79,6 +79,19 @@
             </div>
         </div>
     </div>
+    <div class="ft-grey">
+        <div class="footer__bottom">
+            <div class="container">
+                <button>SIGN-UP NOW!</button>
+                <h3>FOLLOW US</h3>
+                <img src="../assets/img/footer-facebook.png">
+                <img src="../assets/img/footer-twitter.png">
+                <img src="../assets/img/footer-youtube.png">
+                <img src="../assets/img/footer-pinterest.png">
+                <img src="../assets/img/footer-periscope.png">
+            </div>
+        </div>
+    </div>
 </footer>
 </template>
 
@@ -95,6 +108,7 @@ export default {
             padding: 1.25rem;
             color: white;
         }
+
         .footer__top {
             display: flex;
             justify-content: space-between;
@@ -108,15 +122,14 @@ export default {
 
             img {
                 width: 20%;
+            }
         }
-    }
-    
+
         .ft-black {
-        background-image: url('../assets/img/footer-bg.jpg');
-        height: 21.875rem;
-        overflow: hidden;
-        
-    }
+            background-image: url('../assets/img/footer-bg.jpg');
+            height: 21.875rem;
+            overflow: hidden;
+        }
 
         .footer__middle {
             display: flex;
@@ -136,6 +149,28 @@ export default {
                 color: rgb(145, 145, 145);
                 font-size: .75rem;
                  list-style: none;
+            }
+        }
+
+        .ft-grey {
+            width: 100%;
+            background-color: var(--fourthy-color);
+        }
+
+        .footer__bottom {
+            display: flex;
+            justify-content: space-between;
+            padding: .9375rem;
+
+            button {
+                border: .1875rem solid var(--tertiary-color);
+                background-color: var(--fourthy-color);
+                color: white;
+                padding: .625rem;
+            }
+
+            h3 {
+                color: var(--tertiary-color);
             }
         }
 </style>

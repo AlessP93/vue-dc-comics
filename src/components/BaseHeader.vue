@@ -46,7 +46,7 @@ export default {
         ul {
             display: flex;
             list-style: none;
-            column-gap: 2.5rem;
+            column-gap: 1.25rem;
             font-size: .75rem;
         }
         a {
