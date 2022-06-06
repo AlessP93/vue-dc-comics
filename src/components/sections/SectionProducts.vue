@@ -1,8 +1,15 @@
 <template>
-  <section>
-    <ul class="products-list">
-        <li class="product" v-for="(product, index) in products"></li>
-    </ul>
+
+  <section class="sc-grey">
+    <div class="container">
+        <ul class="products__list">
+            <li class="product" v-for="(product, index) in products" :key="index">
+                <img :src="product.thumb" :alt="product.series">
+                <span> {{product.series}} </span>
+            </li>
+        </ul>
+    </div>
+    <button>LOAD MORE</button>
   </section>
 </template>
 
@@ -90,10 +97,41 @@ export default {
 }
 </script>
 
-<style>
-    main {
-        background-image: url("../../assets/img/jumbotron.jpg");
-        background-size: cover;
-        padding: 10.625rem;
+<style lang="scss" scoped>
+
+    .container {
+        display: flex;
     }
+    .products__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+        padding: 1.5625rem 0;
+    }
+
+    .product {
+        width: 15%;
+        list-style: none;
+        
+        img {
+            height: 150px;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+    .sc-grey {
+        background-color: var(--fourthy-color);
+        color: white;
+        text-align: center;
+        padding: .9375rem 0;
+
+         button {
+            border: .1875rem solid var(--tertiary-color);
+            background-color: var(--tertiary-color);
+            color: white;
+            padding: .375rem 2.1875rem;
+            }
+        }
 </style>

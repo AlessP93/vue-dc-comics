@@ -20,7 +20,7 @@
                     <small>COMIC SHOP LOCATOR</small>
                 </div>
                 <div>
-                    <img src="../assets/img/buy-comics-digital-comics.png">
+                    <img src="../assets/img/buy-dc-power-visa.svg">
                     <small>DC POWER VISA</small>
                 </div>
             </div>
@@ -80,15 +80,17 @@
         </div>
     </div>
     <div class="ft-grey">
-        <div class="footer__bottom">
-            <div class="container">
-                <button>SIGN-UP NOW!</button>
-                <h3>FOLLOW US</h3>
-                <img src="../assets/img/footer-facebook.png">
-                <img src="../assets/img/footer-twitter.png">
-                <img src="../assets/img/footer-youtube.png">
-                <img src="../assets/img/footer-pinterest.png">
-                <img src="../assets/img/footer-periscope.png">
+        <div class="container">
+            <div class="footer__bottom">
+                <div><button>SIGN-UP NOW!</button></div>
+                <div class="social">
+                    <h3>FOLLOW US</h3>
+                    <img src="../assets/img/footer-facebook.png">
+                    <img src="../assets/img/footer-twitter.png">
+                    <img src="../assets/img/footer-youtube.png">
+                    <img src="../assets/img/footer-pinterest.png">
+                    <img src="../assets/img/footer-periscope.png">
+                </div>
             </div>
         </div>
     </div>
@@ -117,7 +119,7 @@ export default {
 
             small {
                 margin-left: .625rem;
-                align-content: center;
+                align-self: center;
             }
 
             img {
@@ -150,6 +152,10 @@ export default {
                 color: rgb(145, 145, 145);
                 font-size: .75rem;
             }
+
+            img {
+                 margin-top: -6.25rem;
+            }
         }
 
         .ft-grey {
@@ -160,21 +166,27 @@ export default {
         .footer__bottom {
             display: flex;
             justify-content: space-between;
-            padding: .9375rem;
-
+           
             button {
                 border: .1875rem solid var(--tertiary-color);
                 background-color: var(--fourthy-color);
                 color: white;
                 padding: .625rem;
+                
+                
             }
 
             h3 {
                 color: var(--tertiary-color);
             }
 
-            img {
-
+            .social {
+                display: flex;
+                align-items: center;
+                gap: 1.25rem;
+                padding: 40px;
+                
             }
+
         }
 </style>
