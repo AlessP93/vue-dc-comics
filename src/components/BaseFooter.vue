@@ -129,6 +129,7 @@ export default {
             background-image: url('../assets/img/footer-bg.jpg');
             height: 21.875rem;
             overflow: hidden;
+            
         }
 
         .footer__middle {
@@ -140,15 +141,14 @@ export default {
                 padding: 1.25rem 0;
             }
 
-            .list li {
-               
+            .list ul {
+               list-style: none ;
             }
 
             a {
                 text-decoration: none;
                 color: rgb(145, 145, 145);
                 font-size: .75rem;
-                 list-style: none;
             }
         }
 
@@ -171,6 +171,10 @@ export default {
 
             h3 {
                 color: var(--tertiary-color);
+            }
+
+            img {
+
             }
         }
 </style>
