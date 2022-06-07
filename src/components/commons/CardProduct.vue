@@ -18,8 +18,8 @@ export default {
 <style lang="scss" scoped>
 
 .product {
-    width: 15%;
-    list-style: none;
+
+
         
     img {
         height: 150px;
@@ -27,5 +27,5 @@ export default {
         object-fit: cover;
         object-position: top;
     }
-
+}
 </style>

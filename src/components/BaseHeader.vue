@@ -50,9 +50,14 @@ export default {
             font-size: .75rem;
         }
         a {
+            transition: all;
             text-decoration: none;
             color: black;
         }
+
+        a:hover {
+            color: var(--tertiary-color);
+            }
     }
 }
 .container {

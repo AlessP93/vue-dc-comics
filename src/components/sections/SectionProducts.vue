@@ -3,9 +3,8 @@
   <section class="sc-grey">
     <div class="container">
         <ul class="products__list">
-            <li class="product" v-for="(product, index) in products" :key="index">
-                <img :src="product.thumb" :alt="product.series">
-                <span> {{product.series}} </span>
+            <li v-for="(product, index) in products" :key="index">
+                <CardProduct :image="product.thumb" :title="product.series"/>
             </li>
         </ul>
     </div>
@@ -14,8 +13,12 @@
 </template>
 
 <script>
+import CardProduct from '../commons/CardProduct.vue';
 export default {
     name: 'SectionProducts',
+    components: {
+        CardProduct
+    },
     data() {
         return{
             products: [
@@ -105,21 +108,16 @@ export default {
     .products__list {
         display: flex;
         flex-wrap: wrap;
-        gap: 1.25rem;
+       
         padding: 1.5625rem 0;
-    }
-
-    .product {
-        width: 15%;
         list-style: none;
-        
-        img {
-            height: 150px;
-            width: 100%;
-            object-fit: cover;
-            object-position: top;
+
+        li {
+            width: calc(100% / 6 - 1.25rem);
+            margin: .625rem;
         }
     }
+
 
     .sc-grey {
         background-color: var(--fourthy-color);
